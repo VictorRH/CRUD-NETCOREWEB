@@ -45,14 +45,11 @@ namespace CRUD_NETCORE.Controllers
             {
                 return NotFound();
             }
-
             var validation = await context.Students.FindAsync(id);
             if (validation == null)
             {
                 return NotFound();
             }
-
-
             return View(validation);
         }
 
@@ -82,8 +79,6 @@ namespace CRUD_NETCORE.Controllers
             {
                 return NotFound();
             }
-
-
             return View(validation);
         }
 
